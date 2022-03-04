@@ -4,7 +4,7 @@
     "description": "",
     "main": "build/src/app.js",
     "scripts": {
-        "start": "tsc && nodemon build/src/app.js",
+        "start": "tsc -w & nodemon build/src/app.js && fg",
         "build": "npm run lint && tsc",
         "compile": "tsc",
         "prettier": "prettier --config ./.prettierrc --write \"**/*.ts\"",
